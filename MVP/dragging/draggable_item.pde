@@ -2,6 +2,7 @@ class Draggable_item
 {
   private PVector location;
   private PVector size;
+  private PVector smallsize = new PVector(100, 100);
   private PImage img;
   private String name;
   
@@ -15,14 +16,14 @@ class Draggable_item
 
  public void display()
  {
-   image(img, location.x, location.y);
+   image(img, location.x, location.y, smallsize.x, smallsize.y);
  }
 
- public void move()
+ public void move(float pmx, float pmy, float mx, float my)
  {
-   if(pmouseX > location.x && pmouseX < location.x + size.x && pmouseY > location.y && pmouseY < location.y + size.y)
+   if(pmx > location.x && pmx < location.x + smallsize.x && pmy > location.y && pmy < location.y + smallsize.y)
    {
-     location = new PVector(mouseX, mouseY);
+     location = new PVector(mx-smallsize.x/2, my-smallsize.y/2);
    }
  } 
 }
