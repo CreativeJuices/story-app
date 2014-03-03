@@ -1,0 +1,46 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+body
+{
+	background-color: #FFFFEE;
+}
+
+#container
+{
+	border-radius: 10px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right:10px;	
+	background-color: #EEEEEE;
+}
+
+#banner
+{
+	border-radius: 10px 10px 0px 0px;
+	position: relative;
+	height: 20%;
+	background-color: #DDDDDD;
+}
+
+#thinkspace
+{
+	border-radius: 0px 0px 10px 10px;
+	position: relative;
+	height: 80%;
+	background-color: #BBBBBB;
+}
+
+#mythinkspace
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
