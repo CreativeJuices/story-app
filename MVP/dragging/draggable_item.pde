@@ -20,7 +20,7 @@ class Draggable_item
 
  public void move()
  {
-   if(pmouseX > location.x && pmouseX < location.x + size.x && pmouseY > location.y && pmouseY < location.Y + size.y)
+   if(pmouseX > location.x && pmouseX < location.x + size.x && pmouseY > location.y && pmouseY < location.y + size.y)
    {
      location = new PVector(mouseX, mouseY);
    }
